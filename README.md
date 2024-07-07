@@ -1,5 +1,4 @@
 # ✍오르미 4기 알고리즘&코딩 테스트 스터디💻
-![오르미_img1](https://github.com/bbabbungtting/oreumi4_codingtest_study/assets/58384329/e0a7e374-970b-48f3-b911-3511b37f7000) 
 
 참여 방법 설명글: https://waytocse.tistory.com/59
 
