@@ -1,6 +1,8 @@
+package Jul_11;
+
 //슬라이딩 윈도우(투 포인터 알고리즘)를 활용한 버전
 
-class Solution {
+public class programmers_연속된부분수열의합 {
     public int[] solution(int[] sequence, int k) {
         int left = 0, right = 0;
         int sum = 0;

@@ -1,3 +1,4 @@
+package Jul_12;
 /*
 picks : dia,iron,stone
 minerals : 제공되는 광물의 배열
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Arrays;
 
-class Solution {
+public class programmers_광물캐기 {
     public int solution(int[] picks, String[] minerals) {
         int answer = 0;
         int fatigue = 0;
