@@ -1,4 +1,4 @@
-package Jul_11;
+package y2024.Jul.Jul_11;
 
 //슬라이딩 윈도우(투 포인터 알고리즘)를 활용한 버전
 

@@ -1,4 +1,4 @@
-package Jul_11;
+package y2024.Jul.Jul_11;
 //시간 초과때문에 58.8점이 나옴
 
 public class programmers_연속된부분수열의합2 {
