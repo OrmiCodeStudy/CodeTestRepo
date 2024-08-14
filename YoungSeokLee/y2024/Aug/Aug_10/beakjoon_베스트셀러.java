@@ -1,4 +1,4 @@
-package Aug_10;
+package y2024.Aug.Aug_10;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

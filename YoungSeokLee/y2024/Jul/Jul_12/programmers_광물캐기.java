@@ -1,4 +1,4 @@
-package Jul_12;
+package y2024.Jul.Jul_12;
 /*
 picks : dia,iron,stone
 minerals : 제공되는 광물의 배열
