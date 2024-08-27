@@ -1,4 +1,5 @@
 package y2024.Aug.Aug_25;
+
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -9,8 +10,11 @@ import java.util.StringTokenizer;
 
 public class beakjoon_연결요소의개수 {
 
+    //방문 여부
     static boolean[] visited;
+    //그래프를 저장하는 연결리스트
     static ArrayList<Integer>[] arrayLists;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer stk = new StringTokenizer(br.readLine());
