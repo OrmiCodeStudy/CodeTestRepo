@@ -22,14 +22,14 @@ public class beakjoon_1676 {
         for(int i =1;i<=n;i++){
             int tempI = i;
 
-            while(tempI%10==0){
-                tempI/=10;
-                cnt++;
-            }
-            while(tempI%2==0){
-                tempI/=2;
-                integerStack.push(2);
-            }
+//            while(tempI%10==0){
+//                tempI/=10;
+//                cnt++;
+//            }
+//            while(tempI%2==0){
+//                tempI/=2;
+//                integerStack.push(2);
+//            }
             while(tempI%5==0){
                 tempI/=5;
                 integerStack.pop();
