@@ -1,4 +1,4 @@
-# 재귀를 사용하여 n번째 피보나치 수를 구하는 문제
+# 재귀를 사용하여 재귀 횟수에 따른 챗봇의 응답을 출력하는 문제
 
 import sys
 input = sys.stdin.readline
