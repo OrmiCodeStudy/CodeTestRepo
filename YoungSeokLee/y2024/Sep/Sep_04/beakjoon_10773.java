@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.Stack;
 
 /*
+제로
 정수가 0이면 최근 수를 지우고 아닌경우 해당 수를 쓴다.
  */
 public class beakjoon_10773 {
