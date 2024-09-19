@@ -9,32 +9,15 @@ input = sys.stdin.readline
 count = int(input())
 serialNums = [input().strip() for _ in range(count)]
 
-# 버블 정렬
-for i in range(count - 1):
-    for j in range(i + 1, count):
+# 정렬 기준 함수 정의
+def sort_key(serial) :
+    # 시리얼 번호 내의 숫자 합
+    num_sum = sum(int(ch) for ch in serial if ch.isdigit())
+    # 1. 길이, 2. 숫자 합, 3. 사전 순
+    return(len(serial), num_sum, serial)
 
-        # 비교할 시리얼 번호의 길이가 다르다면, 짧은 것이 먼저 오도록 정렬
-        if len(serialNums[i]) > len(serialNums[j]):
-            serialNums[i], serialNums[j] = serialNums[j], serialNums[i]
-
-        # 비교할 시리얼 번호의 길이가 같다면
-        elif len(serialNums[i]) == len(serialNums[j]):
-
-            # 첫 번째 시리얼 번호의 숫자 합 계산
-            iSum = sum(int(ch) for ch in serialNums[i] if ch.isdigit())
-
-            # 두 번째 시리얼 번호의 숫자 합 계산
-            jSum = sum(int(ch) for ch in serialNums[j] if ch.isdigit())
-
-            # 숫자 합 비교, 숫자 합이 작은 시리얼 번호가 먼저 오도록 정렬
-            if iSum > jSum:
-                serialNums[i], serialNums[j] = serialNums[j], serialNums[i]
-
-            # 위의 두 조건으로 비교가 불가능하다면
-            elif iSum == jSum:
-                # 사전 순 비교
-                if serialNums[i] > serialNums[j]:
-                    serialNums[i], serialNums[j] = serialNums[j], serialNums[i]
+# 정렬 기준을 적용한 정렬
+serialNums = sorted(serialNums, key=sort_key)
 
 # 출력
 print(*serialNums, sep='\n')
