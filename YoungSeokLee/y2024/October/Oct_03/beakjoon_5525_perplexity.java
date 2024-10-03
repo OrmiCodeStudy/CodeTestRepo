@@ -16,15 +16,6 @@ public class beakjoon_5525_perplexity {
         int m = Integer.parseInt(br.readLine());
         String s = br.readLine();
 
-        StringBuilder sb = new StringBuilder();
-        for(int i =0;i<n*2+1;i++){
-            if(i%2==0)
-                sb.append("I");
-            else
-                sb.append("O");
-        }
-        String pn = sb.toString();
-
         int patternCnt = 0;
         int cnt = 0;
         for(int i =1;i<m-1;i++){
