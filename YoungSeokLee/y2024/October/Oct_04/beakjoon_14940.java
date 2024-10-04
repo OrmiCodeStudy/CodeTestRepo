@@ -102,15 +102,15 @@ public class beakjoon_14940 {
         beakjoon_14940 T = new beakjoon_14940();
         T.BFS(map,distance,isVisited,startX,startY);
 
-        StringBuilder sb;
+        StringBuilder sb = new StringBuilder();;
         for(int i=0;i<n;i++){
-            sb = new StringBuilder();
+
             for(int j=0;j<m;j++){
                 sb.append(distance[i][j]).append(" ");
             }
             sb.append("\n");
-            bw.write(sb.toString());
         }
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
