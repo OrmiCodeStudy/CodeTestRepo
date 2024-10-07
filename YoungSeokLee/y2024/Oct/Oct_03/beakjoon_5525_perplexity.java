@@ -1,4 +1,4 @@
-package y2024.October.Oct_03;
+package y2024.Oct.Oct_03;
 
 
 import java.io.BufferedReader;
